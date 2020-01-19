@@ -5,6 +5,7 @@ html {
 :root { 
     --grayscaleValue :.2; 
     --blur : 2px; 
+    --borderColor : yellow;
     --photo :url('./background.jpg');
 }
 body { 
@@ -43,13 +44,18 @@ top: 15%;
 left: 10%;
 color: white;
 width: 80%;
+font-size: .7em;
 }
+
+label {
+    margin: 15px;
+} 
 
 .photo-container { 
     position: relative;
     width: 70vw;
     height: 60vh;
-    background-color: rgb(190, 152, 24);
+    background-color: var(--borderColor);
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
