@@ -1,5 +1,5 @@
 
-const allInputs = document.querySelectorAll('input'); 
+const allInputs = document.querySelectorAll('.input'); 
 const basicUrl = "./background.jpg";
 
 
