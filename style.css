@@ -1,0 +1,54 @@
+html { 
+    font-size: calc(1em + 1vw);
+}
+
+.wrapper { 
+    width : 100vw; 
+    height: 100vh;
+    background-color: rgb(1, 50, 80);
+    position: relative;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.head-tittle { 
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    text-transform: capitalize;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.sliders { 
+position: absolute;
+top: 15%;
+left: 10%;
+color: white;
+}
+
+.photo-container { 
+    position: relative;
+    width: 70vw;
+    height: 50vh;
+    background-color: rgb(190, 152, 24);
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.photo-background { 
+    background-image: url("./background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
