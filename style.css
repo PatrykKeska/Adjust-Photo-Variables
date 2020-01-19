@@ -84,14 +84,18 @@ label {
 
 }
 
+.wrapper { 
+    min-height: 130vh;
+}
+
     .sliders { 
         position: absolute;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
+        align-items: flex-start;
         flex-direction: column;
         top: 15%;
-        left: 5%;
+        left: 1%;
         color: white;
         font-size: .8em;
         width: 80%;
