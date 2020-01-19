@@ -2,6 +2,16 @@ html {
     font-size: calc(1em + 1vw);
 }
 
+:root { 
+    --grayscaleValue :.2; 
+    --blur : 2px; 
+    --photo :url('./background.jpg');
+}
+body { 
+    margin: 0 auto;
+}
+
+
 .wrapper { 
     width : 100vw; 
     height: 100vh;
@@ -9,11 +19,12 @@ html {
     position: relative;
     box-sizing: border-box;
     padding: 5px;
+    overflow: hidden;
 }
 
 .head-tittle { 
     position: absolute;
-    top: 3%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.2em;
@@ -25,15 +36,19 @@ html {
 
 .sliders { 
 position: absolute;
+display: flex;
+justify-content: space-between;
+align-items: center;
 top: 15%;
 left: 10%;
 color: white;
+width: 80%;
 }
 
 .photo-container { 
     position: relative;
     width: 70vw;
-    height: 50vh;
+    height: 60vh;
     background-color: rgb(190, 152, 24);
     top: 60%;
     left: 50%;
@@ -41,7 +56,7 @@ color: white;
 }
 
 .photo-background { 
-    background-image: url("./background.jpg");
+    background-image: var(--photo);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -51,4 +66,38 @@ color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    filter: blur(var(--blur))grayscale(var(--grayscaleValue));
+    transition: all .3s linear;
+
+}
+
+
+@media (max-width : 500px){ 
+.head-tittle{ 
+    font-size: .7em;
+
+}
+
+    .sliders { 
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        top: 15%;
+        left: 5%;
+        color: white;
+        font-size: .8em;
+        width: 80%;
+        }
+        .photo-container { 
+            position: relative;
+            width: 70vw;
+            height: 50vh;
+            background-color: rgb(190, 152, 24);
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        
 }

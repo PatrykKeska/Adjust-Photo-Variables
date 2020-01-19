@@ -12,9 +12,15 @@
         <h1 class="head-tittle">adjust photo variables using slider</h1>
      
         <div class="sliders">
-            <label for="spacing" >Spacing</label>
-            <input type="range" min="5" max="100" value="10">
-     
+            <label for="grayScale" >Gray Scale  <input class="grayScaleSlider" type="range" data-key="grayScale" min="0" max="10"  value="1"> </label>
+           
+            
+            
+            <label for="blur" >Blur <input class="blurSlider" type="range" min="1" max="10" data-key="blur" value="3">
+            </label>
+
+            
+            <label for="addPhoto" >Add you own photo url : <input class="addPhoto" type="text" data-key="addPhoto"> </label>
         </div>
         <div class="photo-container">
             <div class="photo-background"></div>
